@@ -9,7 +9,7 @@ public class Client {
         scanner.close();
 
         long startTime = System.currentTimeMillis();
-        BestFirstSearch.bestFirstSearch(rootState,strGoalState);
+        BestFirstSearch.search(rootState,strGoalState);
 
         long finishTime = System.currentTimeMillis();
         long totalTime = finishTime - startTime;
