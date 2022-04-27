@@ -8,8 +8,7 @@ import java.util.Stack;
 public class Node {
     private final String strState;
     private final ArrayList<Node> arChildrenNodes;
-    private Node parentNode;
-    private int intCost;
+    private Node parentNode = null;
 
     /**
      * Construtor da classe Node.
@@ -22,20 +21,6 @@ public class Node {
         this.strState = state;
         this.arChildrenNodes = new ArrayList<>();
     }
-
-    /**
-     * Método que retorna o custo do Node.
-     *
-     * @return intCost Inteiro com valor de custo de resolução.
-     */
-    public int getIntCost() {return intCost;}
-
-    /**
-     * Método que definir o custo do Node.
-     *
-     * @param intCost Inteiro com valor de custo de resolução.
-     */
-    public void setIntCost(int intCost) {this.intCost = intCost;}
 
     /**
      * Método que retorna o estado do Node.
