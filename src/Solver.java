@@ -32,7 +32,7 @@ public class Solver {
                 if (!visitedStateSet.contains(strNode)){
                     visitedStateSet.add(strNode);
                     Node child = new Node(strNode);
-                    currentNode.addChildrenNode(child);
+                    child.setParentNode(currentNode);
                     nodeQueue.add(child);
                 }
             }
